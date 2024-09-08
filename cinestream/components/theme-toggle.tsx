@@ -30,6 +30,7 @@ export function ThemeToggle() {
 			) : (
 				<MoonIcon className="size-4 text-sky-950" />
 			)}
+			<span className="sr-only">Toggle theme</span>
 		</Button>
 	);
 }

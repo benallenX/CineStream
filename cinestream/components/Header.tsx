@@ -3,6 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import MovieLogo from '@/app/images/mlogo.png';
 import { ThemeToggle } from './theme-toggle';
+import SeachInput from './SeachInput';
+import GenreDropdown from './GenreDropdown';
 
 const Header = () => {
 	return (
@@ -17,6 +19,8 @@ const Header = () => {
 				/>
 			</Link>
 			<div className="flex space-x-2">
+				<GenreDropdown />
+				<SeachInput/>
 				<ThemeToggle />
 			</div>
 		</header>
